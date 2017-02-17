@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5,
+	h6, pre, code,form, fieldset,legend, input, textarea,p, blockquote, table, th, td {
+    padding: 0;
+    margin: 0; 
+    }
+    body {
+		background-color: #f5f5f5;
+    }
+		.top{
+			height: 500px;
+			background-color: skyblue;
+			background-image: url(../img/header_bg.jpg);
+			background-position: center top;
+			background-size: cover;
+			border: 5px solid #fff;
+			position: relative;
+			border-bottom: none;
+
+		}
+		.search{
+			width: 100%;
+			height: 50px;
+			background-color: #222;
+			color: white;
+			padding-left: 50px;
+			border: 1px solid transparent;
+			/*background-attachment: fixed;*/
+			position: fixed;
+			top:0;
+		}
+		.nav {
+			display: inline-block;
+		}
+		.nav li {
+			display: inline-block;
+			list-style: none;
+		}
+		.nav a{
+			text-decoration: none;
+			line-height: 50px;
+			margin-right: 20px;
+			color: rgba(255,255,255,0.5);
+		}
+		div a:hover{
+			color: white;
+		}
+		.p{
+			width: 100%;			
+			color: white;
+			font-size: 50px;
+			margin-top: 300px;
+			/*background-attachment: scroll;*/
+			text-align: center;
+    		line-height: 1.6;
+		}
+		.bottom{
+			height: 350px;
+			/*background-color: pink;*/
+			padding:50px;
+			box-sizing: border-box;
+		}
+		.bottom div {
+			width: 30%;
+			height: 250px;
+			/*background-color: red;*/
+			float: left;
+		}
+		.boot,.retina {
+			margin-right: 5%;
+		}
+
+		.boot{
+
+
+		}
+		.retina{
+
+
+		}
+		.crafted{
+
+		}
+		.icon {
+			display: block;
+		    width: 88px;
+		    height: 78px;
+		    margin: 20px auto;
+		}
+		.icon-book{
+			background-image: url(../img/book.png);
+		}
+		.icon-eye{
+			background-image: url(../img/eye.png);
+		}
+		.icon-heart{
+			background-image: url(../img/heart.png);
+		}
+		.icon-title {
+			color: #333;
+		    text-align: center;
+		    font-size: 30px;
+		}
+		.icon-p {
+		    padding: 10px 20px;
+		    color: #555;
+		    font-size: 17px;
+		    text-align: center;
+		}
+		.toggle {
+			display: inline-block;
+		    background-image: url(../img/logo.png);
+		    width: 30px;
+		    height: 34px;
+		    margin-top: 7px;
+		    box-sizing: border-box;
+		}
+		.toggle-div {
+			height: 50px;
+			width: 50px;
+		    display: inline-block;
+		    float: left;
+		}
+		.navbar {
+			height: 50px;
+		    display: inline-block;
+		    /* border: 1px solid red; */
+		    margin-left: 12px;
+		}
+
+		@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+			.p{
+				font-size: 30px;
+			}
+			.bottom div {
+				width: 100%;
+			}
+			.nav {
+				display: none;
+			}
+			.toggle-div {
+			    float: right;
+			}
+			.search {
+			    padding-left: 0;
+			}
+		}
+		
+		@media screen and (min-width: 600px)  and (max-width: 1000px){ /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+			.p{
+				font-size: 35px;
+			}
+			.bottom div {
+				width: 45%;
+			}
+		}
+
+
+		
+
+	</style>
+</head>
+<body>
+
+<div class="top">
+	<div class="search">
+		<div class="toggle-div">
+			<span  class="toggle"></span>
+		</div>
+		<div class="navbar">
+			<ul class="nav">
+				<li><a href="#">home</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">services</a></li>
+				<li><a href="#">team</a></li>
+				<li><a href="#">portfolio</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">contace</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="p">
+		<p>A bootstrap 3 one page theme. </p>
+		<p>exclusive for blacktie.co.</p>
+	</div>
+	
+</div>
+<div class="bottom">
+	<div class="boot">
+		<span class="icon icon-book"></span>
+		<h2 class="icon-title">Bootstrap 3</h2>
+		<p class="icon-p">Shield Theme is powered by Bootstrap 3. The incredible Mobile First Framework is the best option to run your website.</p>
+	</div>
+	<div class="retina">
+		<span class="icon icon-eye"></span>
+		<h2 class="icon-title">Retina Ready</h2>
+		<p class="icon-p">You can use this theme with your iPhone, iPad or MacBook Pro. This theme is retina ready and that is awesome.</p>
+	</div>
+	<div class="crafted">
+		<span class="icon icon-heart"></span>
+		<h2 class="icon-title">Crafted with Love</h2>
+		<p class="icon-p">We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love.</p>
+	</div>
+
+</div>
+<div></div>
+
+</body>
+</html>
